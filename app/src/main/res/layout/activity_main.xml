@@ -11,14 +11,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.georgwestner.nationalday.MainActivity">
 
+
+    <TextView
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:id="@+id/nationalDayDate"
+        android:layout_alignBaseline="@+id/country"
+        android:layout_alignBottom="@+id/country"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <TextView
+        android:text="@string/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/nationalDay"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:text="@string/national_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/nationalDay"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/flag"
-        android:layout_marginTop="11dp"
         android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:cropToPadding="false"
-        android:adjustViewBounds="false" />
+        android:adjustViewBounds="false"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/nationalDay"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+            android:text="@string/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/country"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
 </RelativeLayout>

@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">nationalDay Hongkong</string>
+    <string name="app_name">日 Hongkong</string>
+    <string name="country">Hongkong</string>
+    <string name="national_day">National Day</string>
+    <string name="description">Description</string>
 </resources>
